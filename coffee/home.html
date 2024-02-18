@@ -15,8 +15,8 @@
 </head>
 <body>
     <!--nav-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid d-flex">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid d-flex px-4">
         <a class="navbar-brand flex-grow-1" href="#">
           <img src="Images/logo.png" alt="" style="height: 49px;">
         </a>
@@ -47,18 +47,28 @@
     </nav>
 
     <!--content-->
-    <div class="row crem mt-3 pt-5 mb-3 pb-2">
-      <div class="card col-2 offset-1 pt-3" style="width: 18rem;">
-        <img src="Images/product-1.png" class="card-img-top" alt="...">
+    <div class="row crem mt-3 pt-5 mb-3 pb-2 gx-5">
+      <div class="row">
+        <div class="col offset-1 ps-5 mb-3">
+          <p class="h1">Enjoy your <span class="text-warning">coffee</span> before your activity</p>
+          <p class="h1">before your activity</p>
+        </div>
+        <div class="col">
+          <img src="Images/coffe-glass.png" class="rounded-circle" style="background-color: rgba(165, 106, 42, 0.671); width: 300px;">
+        </div>
+      </div>
+      <p class="fs-1 text-dark ps-5">Popular Now</p>
+      <div class="card col-3 offset-1 pt-3 shadow-lg" style="width: 18rem;">
+          <img src="Images/product-1.png" class="card-img-top rounded" alt="...">
         <div class="card-body">
           <p class="card-text">Vanilla Latte <span class="float-end"><strong>21K</strong></span></p>
           <button type="button" class="btn btn-outline-danger me-4">Hot</button>
           <button type="button" class="btn btn-outline-warning">Cold</button>
-          <i class="ai-cart text-warning rounded-circle fs-3 float-end " ></i>
+          <i class="ai-cart text-warning rounded-circle fs-3 float-end"></i>
         </div>
       </div>
-      <div class="card col-2 offset-1 pt-3" style="width: 18rem;">
-        <img src="Images/product-2.png" class="card-img-top" alt="...">
+      <div class="card col-3 offset-1 pt-3 shadow-lg" style="width: 18rem;">
+        <img src="Images/product-2.png" class="card-img-top rounded" alt="...">
         <div class="card-body">
           <p class="card-text">Espresso <span class="float-end"><strong>12K</strong></span></p>
           <button type="button" class="btn btn-outline-danger me-4">Hot</button>
@@ -66,8 +76,8 @@
           <i class="ai-cart text-warning rounded-circle fs-3 float-end " ></i>
         </div>
       </div>
-      <div class="card col-2 offset-1 pt-3 pe-20" style="width: 18rem;">
-        <img src="Images/product-3.png" class="card-img-top" alt="...">
+      <div class="card col-3 offset-1 pt-3 pe-20 shadow-lg" style="width: 18rem;">
+        <img src="Images/product-3.png" class="card-img-top rounded" alt="...">
         <div class="card-body">
           <p class="card-text">Hazelnut Latte <span class="float-end"><strong>23K</strong></span></p>
           <button type="button" class="btn btn-outline-danger me-4">Hot</button>
@@ -78,19 +88,19 @@
     </div>
     <!--delivery service-->
     <p class="h1 ps-5">How to use delivery service</p>
-    <div class="row p-5">
-      <div class="col-3 offset-1">
-        <img src="Images/service-1.png" class="img-fluid" alt="...">
+    <div class="row gx-5">
+      <div class="col ms-5">
+        <img src="Images/service-1.png" class="img-fluid" alt="..." style="width: 300px;">
         <p class="h4">Choose your coffee</p>
         <p>there are 20+ coffees for you</p>
       </div>
-      <div class="col-3 offset-1">
-        <img src="Images/service-2.png" class="img-fluid" alt="...">
+      <div class="col">
+        <img src="Images/service-2.png" class="img-fluid" alt="..." style="width: 300px;">
         <p class="h4">We delivery it to you</p>
         <p>choose delivery service</p>
       </div>
-      <div class="col-3 offset-1">
-        <img src="Images/service-3.png" class="img-fluid" alt="...">
+      <div class="col">
+        <img src="Images/service-3.png" class="img-fluid" alt="..." style="width: 290px;">
         <p class="h4">Enjoy your coffee</p>
         <p>choose delivery service</p>
       </div>
@@ -180,10 +190,11 @@
       </div>
     </div>    
     <!--closing-->
-    <div class="border border-1" style="background-image: url(Images/bg-newsletter.png);">
-      <p class="text-light">Subscribe to get 50% discount price</p>
-      <a href="#" class="btn btn-outlin-danger">Subscribe</a>
-    </div>
+    <form class="d-flex align-items-center position-relative" role="search" style="background-color: bisque;">
+      <img src="Images/bg-newsletter.png" style="height: 250px; width: 90%; padding: 30px; padding-left: 200px;">
+      <p class="text-light position-absolute" style="padding-left: 40%;">Subscribe us to get 50% discount price</p>
+      <a href="#" class="text-decoration-none text-light position-absolute" style="padding-left: 45%; padding-top: 40px;"><bold>SUBSCRIBE</bold></a>
+    </form>
 
     <!--js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
