@@ -1,0 +1,235 @@
+$myColor: sandybrown;
+$secondColor: brown;
+$baseSize: 4px;
+
+/*mixin*/
+@mixin flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ /*mixin*/ 
+
+*{
+  margin-left: 0;
+  font-family: poppins;
+}
+
+.container{
+  background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 80px;
+
+    .bg-cofe{
+      width: 600px;
+      position: absolute;
+      color: white;
+    }
+  }
+.content-left{
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 60px;
+  padding-top: 0px;
+    img{
+        width: 310px;
+    }
+}
+
+/*content right*/
+
+.content-right{
+  position: relative;
+  padding-left: 50px;
+  padding-right: 70px;
+    .title{
+      font-size: 40px;
+      p{
+      font-size: 10px;
+      }
+      span{
+        text-decoration: underline yellow 5px;
+      }
+    }
+    .title2{
+       font-size: 20px;
+    }
+}    
+
+.order-button{
+    @include flex-box();
+    font-size: 18px;
+    gap: 9px;
+    padding: ($baseSize * 3) ($baseSize * 6);
+    border-radius: ($baseSize * 10);
+    background-color: rgb(147, 71, 5);
+    color: gold;
+}
+
+.content-right{
+  width: 400px;
+    .high-img{
+      @include flex-box();
+
+      position: relative;
+
+    }
+}
+
+/*setion2*/
+
+.for{
+  text-decoration: underline yellow 5px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 80px;
+}
+
+.left{
+  margin-left: 0;
+  border: solid black 1px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 3px 3px black;
+  .produk{
+    font-size: 15px;
+    margin: 10px;
+    .card{
+      border: solid 1px black;
+      width: 80px;
+      background: white;
+      border-radius: ($baseSize*10);
+      position: absolute;
+      top: 1px;
+      margin-top: 840px;
+      margin-left: 10px;
+      p{
+        float: left;
+        margin-left: 10px;
+      }
+      i{
+        color: goldenrod;
+      }
+    }
+  img{
+    width: 400px;
+    border-radius: 10%;
+  }
+  .menu{
+    span{
+      float: right;
+      padding-right: 40px;
+    }
+    .des{
+      float: left;
+      font-size: 20px;
+      padding-right: 50px;
+    }
+    .cart{
+      padding-right: 40px;
+      float: right;
+      color: yellow;
+    }
+  }
+ }
+}
+
+.center{
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid black 1px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 3px 3px black;
+  .produk{
+    font-size: 15px;
+    margin: 10px;
+    .card{
+      border: solid 1px black;
+      width: 80px;
+      background: white;
+      border-radius: ($baseSize*10);
+      position: absolute;
+      top: 1px;
+      margin-top: 840px;
+      margin-left: 10px;
+      p{
+        float: left;
+        margin-left: 10px;
+      }
+      i{
+        color: goldenrod;
+      }
+    }
+  img{
+    width: 400px;
+    border-radius: 10%;
+  }
+  .menu{
+    span{
+      float: right;
+      padding-right: 40px;
+    }
+    .des{
+      float: left;
+      font-size: 20px;
+      padding-right: 50px;
+    }
+    .cart{
+      padding-right: 40px;
+      float: right;
+      color: yellow;
+    }
+  }
+ }
+}
+
+.right{
+  margin-right: 300px;
+  border: solid black 1px;
+  border-radius: 5%;
+  box-shadow: 3px 3px 3px 3px black;
+  .produk{
+    font-size: 15px;
+    margin: 10px;
+    .card{
+      border: solid 1px black;
+      width: 80px;
+      background: white;
+      border-radius: ($baseSize*10);
+      position: absolute;
+      top: 1px;
+      margin-top: 840px;
+      margin-left: 10px;
+      p{
+        float: left;
+        margin-left: 10px;
+      }
+      i{
+        color: goldenrod;
+      }
+    }
+  img{
+    width: 400px;
+    border-radius: 10%;
+  }
+  .menu{
+    span{
+      float: right;
+      padding-right: 40px;
+    }
+    .des{
+      float: left;
+      font-size: 20px;
+      padding-right: 50px;
+    }
+    .cart{
+      padding-right: 40px;
+      float: right;
+      color: yellow;
+    }
+  }
+ }
+}
