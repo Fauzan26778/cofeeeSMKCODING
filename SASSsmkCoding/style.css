@@ -12,7 +12,8 @@
   padding: 72px 80px;
 }
 .container .bg-cofe {
-  width: 600px;
+  width: 820px;
+  height: 400px;
   position: absolute;
   color: white;
 }
@@ -25,13 +26,14 @@
 }
 .content-left img {
   width: 310px;
+  padding-left: 150px;
 }
 
 /*content right*/
 .content-right {
   position: relative;
   padding-left: 50px;
-  padding-right: 70px;
+  padding-right: 190px;
 }
 .content-right .title {
   font-size: 40px;
